@@ -1,0 +1,19 @@
+UPDATE film
+SET genre = 'Horor Psikologis', rating = 8.5
+WHERE judul_film = 'Pengabdi Setan';
+UPDATE film
+SET genre = 'Laga Fiksi'
+WHERE YEAR(tanggal_rilis) = 2019;
+UPDATE film
+SET judul_film = 'Agak Laen The Movie', tanggal_rilis = '2024-02-02'
+WHERE id_film = 1;
+DELETE FROM film
+WHERE genre = 'Drama' AND rating > 8.0;
+DELETE FROM film
+WHERE tanggal_rilis IS NULL;
+DELETE FROM film
+WHERE YEAR(tanggal_rilis) = 2016;
+
+
+
+
